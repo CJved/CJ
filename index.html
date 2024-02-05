@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Valentine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        body {
+            background: red url('https://th.bing.com/th/id/R.10f852774531ae09345d1e9021dc9cf2?rik=66KrgLEOl4JANw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fY1wcYa0.jpg&ehk=ByNLhKad75E4wDtJNTpig39M0xCXIDxqaCZmCaK6%2ffg%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            color: white;
+            font-family: 'Great Vibes', cursive;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 15%;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            transition: transform .2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function respond(response) {
+            if (response === 'yes') {
+                window.location.href = "yes.html";
+            } else {
+                window.location.href = "no.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Heyyy A 👋</h1>
+    <p>U good?</p>
+    <p>Anyways I've been meaning to ask you something and that's...</p>
+    <h2>Uhhhh.... will u be my Valentine 😊?</h2>
+    <button onclick="respond('yes')">Yes 😊</button>
+    <button onclick="respond('no')">No 😞</button>
+</body>
+</html>
+
+
